@@ -29,28 +29,19 @@ Estructura del proyecto
 
 api-reservas-hoteles/
 │
-│
-│
 ├── controller/
 │   └── reservas.controller.js
-│
 │
 ├── data/
 │   └── reservas.json
 │
-│
 ├── routes/
 │   └── reservas.routes.js
 │
-│
 ├── .env
-│
 ├── .gitignore
-│
 ├── package.json
-│
 ├── package-lock.json
-│
 └── server.js
 
 Instalación
@@ -75,8 +66,20 @@ npm run dev
 
 
 
-Endpoints principales
-MétodoEndpointDescripciónPOST/api/reservasCrear una nueva reservaGET/api/reservasObtener todas las reservas o aplicar filtrosGET/api/reservas/:idObtener una reserva por IDPUT/api/reservas/:idActualizar una reserva existenteDELETE/api/reservas/:idEliminar una reservaGET/api/reservas?hotel=HOTELFiltrar por nombre de hotelGET/api/reservas?fecha_inicio=YYYY-MM-DD&fecha_fin=YYYY-MM-DDFiltrar por rango de fechasGET/api/reservas?tipo_habitacion=TIPOFiltrar por tipo de habitaciónGET/api/reservas?estado=ESTADOFiltrar por estado de la reservaGET/api/reservas?num_huespedes=CANTIDADFiltrar por número de huéspedes
+| Método | Endpoint                                                     | Descripción                                  |
+| ------ | ------------------------------------------------------------ | -------------------------------------------- |
+| POST   | `/api/reservas`                                              | Crear una nueva reserva                      |
+| GET    | `/api/reservas`                                              | Obtener todas las reservas o aplicar filtros |
+| GET    | `/api/reservas/:id`                                          | Obtener una reserva por ID                   |
+| PUT    | `/api/reservas/:id`                                          | Actualizar una reserva existente             |
+| DELETE | `/api/reservas/:id`                                          | Eliminar una reserva                         |
+| GET    | `/api/reservas?hotel=HOTEL`                                  | Filtrar por nombre de hotel                  |
+| GET    | `/api/reservas?fecha_inicio=YYYY-MM-DD&fecha_fin=YYYY-MM-DD` | Filtrar por rango de fechas                  |
+| GET    | `/api/reservas?tipo_habitacion=TIPO`                         | Filtrar por tipo de habitación               |
+| GET    | `/api/reservas?estado=ESTADO`                                | Filtrar por estado                           |
+| GET    | `/api/reservas?num_huespedes=CANTIDAD`                       | Filtrar por número de huéspedes              |
+
+
 Documentación
 La API incluye una interfaz Swagger disponible al iniciar el servidor:
 http://localhost:3000
