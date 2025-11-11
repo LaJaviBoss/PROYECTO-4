@@ -1,0 +1,14 @@
+[
+  {
+    "id": "fadosol",
+    "hotel": "Hotel Tipton",
+    "tipo_habitacion": "suite presidencial",
+    "num_huespedes": 4,
+    "fecha_ingreso": "2025-05-15",
+    "fecha_salida": "2025-05-18",
+    "estado": "pagada",
+    "nombre_contacto": "London Tipton",
+    "email": "vivayo@ejemplo.com",
+    "observaciones": "Todo Incluido"
+  }
+]
