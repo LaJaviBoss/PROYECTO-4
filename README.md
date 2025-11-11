@@ -26,21 +26,31 @@ Dotenv
 
 
 Estructura del proyecto
+
 api-reservas-hoteles/
+│
+│
 │
 ├── controller/
 │   └── reservas.controller.js
 │
+│
 ├── data/
 │   └── reservas.json
+│
 │
 ├── routes/
 │   └── reservas.routes.js
 │
+│
 ├── .env
+│
 ├── .gitignore
+│
 ├── package.json
+│
 ├── package-lock.json
+│
 └── server.js
 
 Instalación
