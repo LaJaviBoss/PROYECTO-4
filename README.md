@@ -1,4 +1,5 @@
 API de Reservas Hoteleras
+
 Proyecto de backend desarrollado con Node.js y Express. Permite gestionar reservas de hoteles mediante operaciones CRUD (crear, leer, actualizar y eliminar), junto con filtros por hotel, fechas, tipo de habitación, estado y número de huéspedes. Incluye documentación interactiva con Swagger UI.
 Tecnologías utilizadas
 
