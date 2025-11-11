@@ -1,42 +1,18 @@
 API de Reservas Hoteleras
 
-Proyecto de backend desarrollado con Node.js y Express.
-Permite gestionar reservas de hoteles mediante operaciones CRUD (crear, leer, actualizar y eliminar), junto con filtros por hotel, fechas, tipo de habitación, estado y número de huéspedes.
+Proyecto backend desarrollado con Node.js y Express.
+Permite gestionar reservas hoteleras mediante operaciones CRUD (crear, leer, actualizar y eliminar), con filtros por hotel, fechas, tipo, estado y número de huéspedes.
 Incluye documentación interactiva con Swagger UI.
 
 Tecnologías utilizadas
 
 Node.js
-
 Express
-
 Swagger UI
-
 Swagger JSDoc
-
 Morgan
-
 CORS
-
 Dotenv
-
-Estructura del proyecto
-api-reservas-hoteles/
-│
-├── controller/
-│   └── reservas.controller.js
-│
-├── data/
-│   └── reservas.json
-│
-├── routes/
-│   └── reservas.routes.js
-│
-├── .env
-├── .gitignore
-├── package.json
-├── package-lock.json
-└── server.js
 
 Instalación
 
@@ -46,43 +22,33 @@ Instalar dependencias:
 
 npm install
 
-
-Crear un archivo .env en la raíz del proyecto con las siguientes variables:
+Crear un archivo .env en la raíz con el siguiente contenido:
 
 PORT=3000
 SERVER_URL=http://localhost:3000
 
 
-Ejecutar el servidor en modo desarrollo:
+Ejecutar el servidor:
 
 npm run dev
 
-
-Acceder al proyecto en el navegador:
+Abrir en el navegador:
 
 http://localhost:3000
 
-Endpoints principales
-Método	Endpoint	Descripción
-POST	/api/reservas	Crear una nueva reserva
-GET	/api/reservas	Obtener todas las reservas o aplicar filtros
-GET	/api/reservas/:id	Obtener una reserva por ID
-PUT	/api/reservas/:id	Actualizar una reserva existente
-DELETE	/api/reservas/:id	Eliminar una reserva
-GET	/api/reservas?hotel=HOTEL	Filtrar por nombre de hotel
-GET	/api/reservas?fecha_inicio=YYYY-MM-DD&fecha_fin=YYYY-MM-DD	Filtrar por rango de fechas
-GET	/api/reservas?tipo_habitacion=TIPO	Filtrar por tipo de habitación
-GET	/api/reservas?estado=ESTADO	Filtrar por estado de la reserva
-GET	/api/reservas?num_huespedes=CANTIDAD	Filtrar por número de huéspedes
+Endpoints
+
+POST /api/reservas → Crear una nueva reserva
+GET /api/reservas → Obtener todas las reservas
+GET /api/reservas/:id → Obtener una reserva por ID
+PUT /api/reservas/:id → Actualizar una reserva
+DELETE /api/reservas/:id → Eliminar una reserva
+
 Documentación
 
-La API cuenta con documentación generada automáticamente mediante Swagger UI.
-Una vez en ejecución, se puede acceder desde:
+Swagger UI disponible en:
 
 http://localhost:3000
-
-
-En esta interfaz se pueden realizar pruebas directas sobre los endpoints.
 
 
 Autor
